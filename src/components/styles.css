@@ -1,6 +1,6 @@
 .form_main, .result_main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 25px;
 }
 
@@ -12,12 +12,12 @@
   margin: 20px 0;
 }
 
-.form_field input {
+.form_field_input {
   font-size: 1rem;
   padding: 5px 5px;
   width: 100%;
-  border: 1px solid lightgray;
   border-radius: 5px;
+  border: 1px solid lightgray;
 }
 
 .parental_consent {
@@ -25,9 +25,9 @@
   margin-bottom: 20px;
 }
 
+.result_back_btn,
 .form_submit_btn {
   width: 100%;
-  font-size: 1.25rem;
   padding: 20px;
   border: 1px solid #40c4ff;
   background: #40c4ff;
@@ -35,29 +35,22 @@
   border-radius: 5px;
   cursor: pointer;
   transition: opacity 0.5s ease;
-}
-
-.form_submit_btn:hover {
-  opacity: 0.7;
-}
-
-.result_back_btn {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.25rem;
-  padding: 20px;
-  border: 1px solid #40c4ff;
-  background: #40c4ff;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: opacity 0.5s ease;
   margin-top: 20px;
+}
+
+.result_back_btn:hover,
+.form_submit_btn:hover {
+    opacity: 0.7;
 }
 
 .result_data {
   padding-left: 20px;
 }
 
-.result_back_btn:hover {
-  opacity: 0.7;
+.error_field {
+    border: 1px solid lightcoral;
 }

@@ -18,7 +18,8 @@ const Result = (props) => {
       </div>
       <p>{`}`}</p>
       <button className='result_back_btn' onClick={handleClick}>
-        Go back
+        <span className='material-icons'>arrow_back</span>
+        <p>Go back</p>
       </button>
     </div>
   );
